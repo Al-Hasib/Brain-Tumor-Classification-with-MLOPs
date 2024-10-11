@@ -6,3 +6,7 @@ Fast API
 Streamlit
 Docker
 AWS
+Weight & Biases
+MLflow
+zenML
+
