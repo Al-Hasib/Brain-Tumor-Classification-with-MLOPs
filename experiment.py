@@ -121,6 +121,14 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
         # load best model weights
         model.load_state_dict(torch.load(best_model_params_path, weights_only=True))
     #return model
+import dagshub
+dagshub.init(repo_owner='Al-Hasib', repo_name='Brain-Tumor-Classification-with-MLOPs', mlflow=True)
+mlflow.set_experiment("Brain Tumor Classification")
+mlflow.set_tracking_uri("https://dagshub.com/Al-Hasib/Brain-Tumor-Classification-with-MLOPs.mlflow")
+
+os.environ['MLFLOW_TRACKING_USERNAME'] = "Al-Hasib"
+os.environ['MLFLOW_TRACKING_PASSWORD'] = "b27407e6aa0149369c190cad4cb87f057cf64611"
+os.environ['MLFLOW_TRACKING_URI'] = "https://dagshub.com/Al-Hasib/Brain-Tumor-Classification-with-MLOPs.mlflow"
 
 if __name__ == '__main__':
 
