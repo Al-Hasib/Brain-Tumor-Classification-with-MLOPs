@@ -1,0 +1,9 @@
+ipykernel
+torch==2.3.0+cu121 --index-url https://download.pytorch.org/whl/cu121
+torchvision 
+torchaudio
+kagglehub
+kaggle
+matplotlib
+pillow
+numpy==1.26.3
